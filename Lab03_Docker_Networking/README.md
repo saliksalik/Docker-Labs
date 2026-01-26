@@ -71,17 +71,11 @@
 
 ---
 
-## Teaching Tips
-- Show each screenshot after running the command so learners can see what to expect.
-- Explain each step in simple words, as if you’re teaching someone new to Docker.
-- Remind learners to clean up containers when done to keep things tidy.
-
----
 
 ## Conclusion
-In this lab, you learned how to:
+In this lab, i learned how to:
 - Launch containers and connect them on the default bridge network.
-- Use `docker inspect` to find network information.
-- Verify inter-container communication using `ping`.
+- How to Use `docker inspect` to find network information.
+- How to Verify inter-container communication using `ping`.
 
 These basics are the foundation for more advanced Docker networking!
