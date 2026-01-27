@@ -50,15 +50,8 @@
 
 ---
 
-## Teaching Tips
-- Show each screenshot after running the command so learners can see what to expect.
-- Explain each step in simple words, as if you’re teaching someone new to Docker.
-- Remind learners to clean up containers and networks when done to keep things tidy.
-
----
-
 ## Conclusion
-In this lab, you learned how to:
+In this lab, I learned how to:
 - Create a user-defined bridge network in Docker.
 - Run containers on that network and communicate using container names.
 - Validate the setup by testing connectivity between containers.
