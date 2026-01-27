@@ -1,6 +1,6 @@
 # Lab 07: Docker Compose for a Web + DB Stack
 
-## What You Will Learn
+
 - How to use Docker Compose to run a web server and a database together with one command.
 - How to keep your database data safe using Docker volumes.
 - How to write and understand a docker-compose.yml file.
