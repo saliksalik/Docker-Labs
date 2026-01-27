@@ -1,0 +1,26 @@
+# Linking Containers - Easy Notes
+
+- **Container Linking:**
+  - Old way to connect containers using `--link`.
+  - Lets one container find another by a nickname (alias).
+  - Not recommended anymore—use networks instead!
+
+- **User-Defined Networks:**
+  - Like making your own private WiFi for containers.
+  - Containers can talk to each other by name automatically.
+  - Easier, safer, and better for teamwork.
+
+- **Drawbacks of Linking:**
+  - Only one-way communication.
+  - Hard to scale and manage.
+  - Deprecated (not for modern projects).
+
+- **How to link (old way):**
+  - `docker run --name myweb --link mydb:mysql -d httpd`
+
+- **How to use networks (better way):**
+  - `docker network create mynetwork`
+  - Start containers with `--network mynetwork`.
+
+- **Summary:**
+  - Use user-defined networks for real projects. Linking is just for learning or old setups.

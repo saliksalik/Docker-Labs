@@ -1,0 +1,24 @@
+# User-Defined Bridge Network - Easy Notes
+
+- **User-Defined Bridge Network:**
+  - Like making your own private WiFi for containers.
+  - You control which containers join and talk to each other.
+
+- **Why use it?**
+  - Containers can talk to each other using their names (like 'container2'), not just IP addresses.
+  - Makes things easier and more organized, especially with lots of containers.
+
+- **How to create:**
+  - `docker network create mynet` (makes a new network called 'mynet')
+
+- **How to use:**
+  - Start containers with `--network mynet` to put them on your network.
+
+- **Test communication:**
+  - Use `curl http://container2` from inside another container to check if they can talk.
+
+- **Why is this better than default?**
+  - More control, easier naming, better for teamwork and scaling.
+
+- **Clean up:**
+  - Remove containers and network when done to keep things tidy.
