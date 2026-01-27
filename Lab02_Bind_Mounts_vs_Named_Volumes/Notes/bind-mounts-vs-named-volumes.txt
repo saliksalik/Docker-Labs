@@ -1,0 +1,27 @@
+# Bind Mounts vs. Named Volumes - Easy Notes
+
+- **Bind Mount:**
+  - Jo folder ya file apke computer pe hai, wohi container ke andar bhi dikhegi.
+  - Agar ap file ko computer pe change karte ho, woh change container me bhi turant dikh jayega.
+  - Zyada tar development ke liye use hota hai, jahan code bar bar update hota hai.
+
+- **Named Volume:**
+  - Docker khud ek special jagah pe data store karta hai (apke computer ke normal folders se alag).
+  - Data safe rehta hai, chahe ap container delete kar do.
+  - Production ya important data ke liye best hai, jahan data ko accidental changes se bachana ho.
+
+- **Yaad raho:**
+  - Bind mount = development, live changes.
+  - Named volume = production, data safety.
+
+- **Example:**
+  - Bind mount: Ap code likh rahe ho aur chahte ho container me turant reflect ho.
+  - Named volume: Ap database ka data rakhna chahte ho jo safe rahe.
+
+- **Command differences:**
+  - Bind mount: `-v <host-path>:<container-path>`
+  - Named volume: `-v <volume-name>:<container-path>`
+
+- **Check:**
+  - Bind mount me host folder ka data container me dikhega.
+  - Named volume me data Docker manage karega, host pe direct nahi dikhega.
