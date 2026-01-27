@@ -137,4 +137,4 @@ SHOW DATABASES;
 ---
 
 ## Conclusion
-You learned how to use Docker Compose to run a web server and a database together, keep your data safe, and manage everything with simple commands!
+I learned how to use Docker Compose to run a web server and a database together, keep my data safe, and manage everything with simple commands!
