@@ -17,21 +17,24 @@
   mkdir "C:\Users\Dell\Desktop\Docker LABS\Lab02_Bind_Mounts_vs_Named_Volumes\host-directory"
   echo Hello from the host! > "C:\Users\Dell\Desktop\Docker LABS\Lab02_Bind_Mounts_vs_Named_Volumes\host-directory\host-file.txt"
   ```
-- **Screenshot:** `bind-mount-directory-and-file.png`
+- **Screenshot:**
+  ![Bind Mount Directory and File](Outputs/bind-mount-directory-and-file.png)
 
 #### Step 2: Run Nginx Container with Bind Mount
 - **Command:**
   ```
   docker run -d --name nginx-bind -v "C:\Users\Dell\Desktop\Docker LABS\Lab02_Bind_Mounts_vs_Named_Volumes\host-directory:/usr/share/nginx/html:ro" -p 8080:80 nginx
   ```
-- **Screenshot:** `nginx-bind-container.png`
+- **Screenshot:**
+  ![Nginx Bind Container](Outputs/nginx-bind-container.png)
 
 #### Step 3: Verify Bind Mount
 - **Command:**
   ```
   curl http://localhost:8080/host-file.txt
   ```
-- **Screenshot:** `bind-mount-curl-output.png`
+- **Screenshot:**
+  ![Bind Mount Curl Output](Outputs/bind-mount-curl-output.png)
 
 ---
 
@@ -42,28 +45,32 @@
   ```
   docker volume create my-volume
   ```
-- **Screenshot:** `create-named-volume.png`
+- **Screenshot:**
+  ![Create Named Volume](Outputs/create-named-volume.png)
 
 #### Step 5: Run Nginx Container with Named Volume
 - **Command:**
   ```
   docker run -d --name nginx-volume -v my-volume:/usr/share/nginx/html -p 8081:80 nginx
   ```
-- **Screenshot:** `nginx-volume-container.png`
+- **Screenshot:**
+  ![Nginx Volume Container](Outputs/nginx-volume-container.png)
 
 #### Step 6: Copy File into Named Volume
 - **Command:**
   ```
   docker cp "C:\Users\Dell\Desktop\Docker LABS\Lab02_Bind_Mounts_vs_Named_Volumes\host-directory\host-file.txt" nginx-volume:/usr/share/nginx/html/
   ```
-- **Screenshot:** `copy-file-to-named-volume.png`
+- **Screenshot:**
+  ![Copy File to Named Volume](Outputs/copy-file-to-named-volume.png.png)
 
 #### Step 7: Verify Named Volume
 - **Command:**
   ```
   curl http://localhost:8081/host-file.txt
   ```
-- **Screenshot:** `named-volume-curl-output.png`
+- **Screenshot:**
+  ![Named Volume Curl Output](Outputs/named-volume-curl-output.png)
 
 ---
 
@@ -84,14 +91,6 @@
 
 ---
 
-## Screenshots to Take
-1. `bind-mount-directory-and-file.png` — After creating the directory and file for the bind mount.
-2. `nginx-bind-container.png` — After running the Nginx container with the bind mount.
-3. `bind-mount-curl-output.png` — Output of curl showing the file from the bind mount.
-4. `create-named-volume.png` — After creating the named volume.
-5. `nginx-volume-container.png` — After running the Nginx container with the named volume.
-6. `copy-file-to-named-volume.png` — After copying the file into the named volume.
-7. `named-volume-curl-output.png` — Output of curl showing the file from the named volume.
 
 ---
 
