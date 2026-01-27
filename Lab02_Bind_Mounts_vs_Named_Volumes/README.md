@@ -18,7 +18,7 @@
   echo Hello from the host! > "C:\Users\Dell\Desktop\Docker LABS\Lab02_Bind_Mounts_vs_Named_Volumes\host-directory\host-file.txt"
   ```
 - **Screenshot:**
-  ![Bind Mount Directory and File](Outputs/bind-mount-directory-and-file.png)
+  ![Bind Mount Directory and File](https://raw.githubusercontent.com/saliksalik/Docker-Labs/main/Lab02_Bind_Mounts_vs_Named_Volumes/Outputs/bind-mount-directory-and-file.png)
 
 #### Step 2: Run Nginx Container with Bind Mount
 - **Command:**
@@ -26,7 +26,7 @@
   docker run -d --name nginx-bind -v "C:\Users\Dell\Desktop\Docker LABS\Lab02_Bind_Mounts_vs_Named_Volumes\host-directory:/usr/share/nginx/html:ro" -p 8080:80 nginx
   ```
 - **Screenshot:**
-  ![Nginx Bind Container](Outputs/nginx-bind-container.png)
+  ![Nginx Bind Container](https://raw.githubusercontent.com/saliksalik/Docker-Labs/main/Lab02_Bind_Mounts_vs_Named_Volumes/Outputs/nginx-bind-container.png)
 
 #### Step 3: Verify Bind Mount
 - **Command:**
@@ -34,7 +34,7 @@
   curl http://localhost:8080/host-file.txt
   ```
 - **Screenshot:**
-  ![Bind Mount Curl Output](Outputs/bind-mount-curl-output.png)
+  ![Bind Mount Curl Output](https://raw.githubusercontent.com/saliksalik/Docker-Labs/main/Lab02_Bind_Mounts_vs_Named_Volumes/Outputs/bind-mount-curl-output.png)
 
 ---
 
@@ -46,7 +46,7 @@
   docker volume create my-volume
   ```
 - **Screenshot:**
-  ![Create Named Volume](Outputs/create-named-volume.png)
+  ![Create Named Volume](https://raw.githubusercontent.com/saliksalik/Docker-Labs/main/Lab02_Bind_Mounts_vs_Named_Volumes/Outputs/create-named-volume.png)
 
 #### Step 5: Run Nginx Container with Named Volume
 - **Command:**
@@ -54,7 +54,7 @@
   docker run -d --name nginx-volume -v my-volume:/usr/share/nginx/html -p 8081:80 nginx
   ```
 - **Screenshot:**
-  ![Nginx Volume Container](Outputs/nginx-volume-container.png)
+  ![Nginx Volume Container](https://raw.githubusercontent.com/saliksalik/Docker-Labs/main/Lab02_Bind_Mounts_vs_Named_Volumes/Outputs/nginx-volume-container.png)
 
 #### Step 6: Copy File into Named Volume
 - **Command:**
@@ -62,7 +62,7 @@
   docker cp "C:\Users\Dell\Desktop\Docker LABS\Lab02_Bind_Mounts_vs_Named_Volumes\host-directory\host-file.txt" nginx-volume:/usr/share/nginx/html/
   ```
 - **Screenshot:**
-  ![Copy File to Named Volume](Outputs/copy-file-to-named-volume.png.png)
+  ![Copy File to Named Volume](https://raw.githubusercontent.com/saliksalik/Docker-Labs/main/Lab02_Bind_Mounts_vs_Named_Volumes/Outputs/copy-file-to-named-volume.png.png)
 
 #### Step 7: Verify Named Volume
 - **Command:**
@@ -70,7 +70,7 @@
   curl http://localhost:8081/host-file.txt
   ```
 - **Screenshot:**
-  ![Named Volume Curl Output](Outputs/named-volume-curl-output.png)
+  ![Named Volume Curl Output](https://raw.githubusercontent.com/saliksalik/Docker-Labs/main/Lab02_Bind_Mounts_vs_Named_Volumes/Outputs/named-volume-curl-output.png)
 
 ---
 
