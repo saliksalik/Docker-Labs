@@ -10,7 +10,8 @@ Learn how Docker volumes work and their importance in data persistence within co
   ```
   docker volume create myvolume
   ```
-- **Screenshot:** Show the terminal output confirming the creation of `myvolume`.
+- **Screenshot:**
+  ![Create Volume Output](Outputs/image%202%20docker%20desktop%20contianer%20made.png)
 
 ### Step 2: Run a Container Using the Volume
 - **Command:**
@@ -21,7 +22,8 @@ Learn how Docker volumes work and their importance in data persistence within co
   - Creates a container named `volcontainer`.
   - Mounts the volume `myvolume` to `/data` inside the container.
   - Writes "Hello World" to a file named `hello.txt` in the volume.
-- **Screenshot:** Show the terminal output confirming the container creation.
+- **Screenshot:**
+  ![Making Container](Outputs/Making%20container%20.png)
 
 ### Step 3: Inspect the Volume Data
 - **Command:**
@@ -30,7 +32,8 @@ Learn how Docker volumes work and their importance in data persistence within co
   ```
 - **Explanation:**
   - Runs a temporary container to read the contents of `hello.txt`.
-- **Screenshot:** Show the terminal output displaying "Hello World".
+- **Screenshot:**
+  ![Inspect the Volume Data](Outputs/image%203(inspect%20the%20volume%20data).png)
 
 ### Step 4: Remove the Container
 - **Command:**
@@ -39,7 +42,8 @@ Learn how Docker volumes work and their importance in data persistence within co
   ```
 - **Explanation:**
   - Removes the container named `volcontainer`.
-- **Screenshot:** Show the terminal output confirming the container removal.
+- **Screenshot:**
+  ![Remove the Container](Outputs/image%204%20remove%20the%20container.png)
 
 ### Step 5: Confirm Data Persistence
 - **Command:**
@@ -48,7 +52,8 @@ Learn how Docker volumes work and their importance in data persistence within co
   ```
 - **Explanation:**
   - Verifies that the file `hello.txt` still exists in the volume after the container is removed.
-- **Screenshot:** Show the terminal output displaying "Hello World".
+- **Screenshot:**
+  ![Confirm Data Persistence](Outputs/image%203(inspect%20the%20volume%20data).png)
 
 ### Step 6: Clean Up (Optional)
 - **Command:**
@@ -57,7 +62,8 @@ Learn how Docker volumes work and their importance in data persistence within co
   ```
 - **Explanation:**
   - Deletes the volume `myvolume`.
-- **Screenshot:** Show the terminal output confirming the volume removal.
+- **Screenshot:**
+  ![Cleanup Volume](Outputs/image%205%20cleanup%20volume.png)
 
 ## Key Learnings
 - Docker volumes persist data beyond the lifecycle of containers.
