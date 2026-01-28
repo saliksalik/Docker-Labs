@@ -1,0 +1,13 @@
+# Ignore node_modules, logs, and OS files
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Allow all Outputs folders and their contents
+!Lab06_Docker_Compose_Basics/Outputs/
+!Lab06_Docker_Compose_Basics/Outputs/*.png
+
+# Allow Outputs for Lab 07
+!Lab07_Docker_Compose_Web_DB_Stack/Outputs/
+!Lab07_Docker_Compose_Web_DB_Stack/Outputs/*
