@@ -1,6 +1,6 @@
 # Lab 08 | 09 | 10: Docker Logs & Debugging, Inspect & Metadata, Healthchecks
 
-## What You Will Learn
+
 - How to check logs from Docker containers to see what's happening inside.
 - How to look at detailed info about containers and images using inspect.
 - How to set up health checks to make sure containers are working properly.
