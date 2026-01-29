@@ -154,7 +154,7 @@ Finally, the files were confirmed on GitHub. This showed the repo was set up. I 
 
 ---
 
-## What Each Command Does (Easy Words)
+## What Each Command Does 
 - `mkdir folder && cd folder`: Makes a new folder and goes inside. Like creating a room for your stuff.
 - `docker build -t name .`: Builds an image from Dockerfile with a name. Like assembling a toy from instructions.
 - `docker run image`: Starts a container from the image. Like turning on a game console.
