@@ -1,6 +1,6 @@
 # Lab 08 | 09 | 10: Docker Logs & Debugging, Inspect & Metadata, Healthchecks
 
-
+## What You Will Learn
 - How to check logs from Docker containers to see what's happening inside.
 - How to look at detailed info about containers and images using inspect.
 - How to set up health checks to make sure containers are working properly.
@@ -138,5 +138,18 @@ To clean up, the lab had me remove the image. I used commands to stop and remove
 
 ---
 
+## Outputs & Screenshots
+(Add screenshots here for each step, like running commands, logs output, inspect JSON, health status.)
+
+---
+
+## What I Learned
+- How to use logs to debug containers.
+- How inspect gives deep info for troubleshooting.
+- How healthchecks keep apps running smoothly.
+- Combining these makes Docker management easier.
+
+---
+
 ## Conclusion
-In these three labs, I learned how to effectively monitor and manage Docker containers. From pulling images and running containers to viewing logs for debugging and inspecting metadata for deep insights, each part built my understanding of Docker's tools. The healthchecks were particularly valuable, teaching me how to automate monitoring to ensure apps stay healthy and self-healing. Overall, I gained practical skills in troubleshooting, configuration, and maintenance, making me more confident in deploying reliable containerized applications. These labs showed that Docker isn't just about running apps—it's about observing, inspecting, and ensuring they run smoothly in production. I also learned the importance of documentation and screenshots for sharing knowledge, as well as cleaning up resources to keep environments efficient.
+You learned to debug, inspect, and monitor Docker containers. These skills help keep apps healthy and fix problems fast!
